@@ -15,7 +15,7 @@ func Sort(values []int) {
 	appendValues(values[:0], root)
 }
 
-// addVvalues 依次追加root下的值到values
+// addValues 依次追加root下的值到values
 func appendValues(values []int, t *tree) []int {
 	if t != nil {
 		values = appendValues(values, t.left)
